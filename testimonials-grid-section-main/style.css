@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: #ecf2f8;
+}
+
+#testimonial-grid-container {
+    padding: 5% 3%;
+}
+
+#testimonial-1 {
+    background-color: #7541c8;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+#testimonial-2 {
+    background-color: #48556a;
+    color: #ffffff;
+}
+
+#testimonial-3 {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#testimonial-4 {
+    background-color: #19212e;
+    color: #ffffff;
+}
+
+#testimonial-5 {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.grid-item {
+    margin-bottom: 15px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.verified {
+    opacity: 0.7;
+}
+
+.headline {
+    margin-bottom: 20px;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.intro {
+    opacity: 0.7;
+}
+
+#quote {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    z-index: 0;
+}
+
+@media (min-width: 650px){
+
+    #left-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top-section {
+        display: flex;
+        gap: 15px;
+        flex-basis: 50%;
+    }
+
+    #bottom-section {
+        display: flex;
+        gap: 15px;
+        flex-basis: 50%;
+    }
+
+    #testimonial-1, #testimonial-4 {
+        flex-basis: 60%;
+    }
+
+    #testimonial-2, #testimonial-3 {
+        flex-basis: 40%;
+    }
+
+    #testimonial-5 {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1000px){
+
+    #testimonial-grid-container {
+        max-width: 1600px;
+        margin: auto;
+        display: flex;
+        gap: 15px;
+    }
+
+    #left-section {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 75%;
+    }
+
+    #testimonial-1, #testimonial-4 {
+        flex-basis: 65%;
+    }
+
+    #testimonial-2, #testimonial-3 {
+        flex-basis: 35%;
+    }
+    
+    #testimonial-5 {
+        width: 100%;
+        flex-basis: 25%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+}
